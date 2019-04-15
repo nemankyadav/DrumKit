@@ -1,0 +1,47 @@
+html,body{
+    background-image: url("musicback.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.jukebox{
+    position:relative;
+    top:100px;
+    left:10px;
+    border-width: 5px 5px 5px 5px;
+}
+
+ul{
+    display:flex;
+    list-style-type: none;
+    border-color: black;
+    border-width: 20px;
+}
+
+.box{
+    background-color:transparent;
+    padding:25px;
+    margin:20px;
+    display: block;
+    border-width: 50px;
+    font-size: 20px;
+    border-color: black;
+    border:solid;
+    opacity: 0.4;
+}
+
+.box:hover{
+    background-color:transparent;
+    opacity: 1;
+    transform: scale(1.1);
+    -webkit-transform:scale(1.1);
+    padding:25px;
+    margin:20px;
+    display: block;
+    border-width: 50px;
+    font-size: 20px;
+    border-color: black;
+    border:solid;
+}
