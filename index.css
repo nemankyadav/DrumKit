@@ -2,46 +2,64 @@ html,body{
     background-image: url("musicback.jpg");
     background-size:cover;
     background-repeat:no-repeat;
-    display: grid;
-    grid-gap: 20px;
+    background-color: rgb(176, 176, 176);
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 120px 0;
+  }
+
 .jukebox{
-    position:relative;
-    top:100px;
-    left:10px;
-    border-width: 5px 5px 5px 5px;
+    position: relative;
+    width: 1035px;
 }
 
 ul{
     display:flex;
     list-style-type: none;
-    border-color: black;
-    border-width: 20px;
 }
 
 .box{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 80px;
+    height: 100px;
     background-color:transparent;
-    padding:25px;
-    margin:20px;
-    display: block;
-    border-width: 50px;
+    padding: 5px;
+    display: inline-block;
     font-size: 20px;
-    border-color: black;
-    border:solid;
+    border: 3px solid black;
     opacity: 0.4;
+    align-content: center;
+    margin-left: 10px;
 }
 
 .box:hover{
-    background-color:transparent;
     opacity: 1;
     transform: scale(1.1);
     -webkit-transform:scale(1.1);
-    padding:25px;
-    margin:20px;
-    display: block;
-    border-width: 50px;
-    font-size: 20px;
-    border-color: black;
-    border:solid;
+}
+
+@media screen and (max-width: 1154px) {
+    .text-desc {
+        display: none;
+    }
+    .jukebox {
+        width: 855px;
+    }
+    .box {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .jukebox {
+        width: 585px;
+    }
+    .box {
+        width: 30px;
+    }
 }
