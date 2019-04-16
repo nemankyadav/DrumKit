@@ -30,15 +30,12 @@ document.addEventListener("keydown",function(e){
 });
 
 //recorder
-    
+ 
+var j=0;
+var recordingArray=[];
 
 startRecording=function(){
     document.addEventListener("keydown",function(e){     
-        var j=0;
-        var recordingArray=[];
-        while (j<50) {
-            
-        
         if     (e.keyCode===65){recordingArray[j++]='0'}
         else if(e.keyCode===83){recordingArray[j++]='1';console.log(recordingArray.length);}
         else if(e.keyCode===68){recordingArray[j++]='2';console.log(recordingArray.length);}
@@ -49,7 +46,6 @@ startRecording=function(){
         else if(e.keyCode===75){recordingArray[j++]='7'}
         else if(e.keyCode===76){recordingArray[j++]='8'}
         else if(e.keyCode===32)return;
-        }
     });return;
     }
 
