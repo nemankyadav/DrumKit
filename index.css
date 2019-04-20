@@ -1,8 +1,15 @@
 html,body{
-    background-image: url("musicback.jpg");
+    background-image: url("musicback2.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-color: rgb(176, 176, 176);
+    /* background-position-y: -250px; */
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 120px 0;
 }
 
 .center {
@@ -12,8 +19,12 @@ html,body{
   }
 
 .jukebox{
-    position: relative;
-    width: 1035px;
+    position:relative;
+    top:4em;
+    width: 64.5em;
+    height: 10em;
+    text-align: center;
+    padding:3em 0em;
 }
 
 ul{
@@ -23,24 +34,124 @@ ul{
 
 .box{
     position: relative;
-    text-align: center;
-    vertical-align: middle;
     width: 80px;
     height: 100px;
     background-color:transparent;
-    padding: 5px;
     display: inline-block;
     font-size: 20px;
-    border: 3px solid black;
+    border:solid black;
     opacity: 0.4;
     align-content: center;
     margin-left: 10px;
+    vertical-align: bottom;
+    padding:10px 5px 0px;
 }
 
 .box:hover{
     opacity: 1;
     transform: scale(1.1);
     -webkit-transform:scale(1.1);
+}
+
+.record{
+    display:flex;
+    height:60px;
+    width:220px;
+    border-radius:50px;
+    border:solid black;
+    border-width: 1px 1px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.start{
+    display: block;
+    height:20px;
+    width:20px;
+    border-radius:50px;
+    border:solid grey;
+    border-width: 10px 10px 10px 10px;
+    position: relative;
+    right:20px;
+    top:-7px;
+    background-color: red;
+}
+.stop{
+    display: block;
+    height:18px;
+    width:18px;
+    border:solid grey;
+    border-width:10px;
+    position: relative;
+    left:5px;
+    top:-7px ;
+    background-color:red;
+}
+
+.play{
+    height:0;
+    width:0;
+    position: relative;
+    left:40px;
+    top:-7px ;
+    border-top: 18px solid transparent;
+    border-left: 36px solid red;
+    border-bottom: 18px solid transparent;
+}
+
+.start:hover{
+    display: block;
+    height:20px;
+    width:20px;
+    border-radius:50px;
+    border:solid black;
+    border-width: 10px 10px 10px 10px;
+    background-color: red;
+}
+
+.stop:hover{
+    display: block;
+    height:18px;
+    width:18px;
+    border:solid black;
+    border-width:10px;
+    background-color:red;
+}
+
+.play:hover{
+    height:0;
+    width:0;
+    position: relative;
+    left:40px;
+    top:-7px ;
+    border-top: 18px solid transparent;
+    border-left: 36px solid black;
+    border-bottom: 18px solid transparent;
+}
+
+@media screen and (max-width: 1154px) {
+    .text-desc {
+        font-size: 15px;
+    }
+    .jukebox {
+        width: 855px;
+    }
+    .box {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .jukebox {
+        width: 585px;
+    }
+    .box {
+        width: 30px;
+    }
+}
+
+.text-desc0{
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1154px) {
