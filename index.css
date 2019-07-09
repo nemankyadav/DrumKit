@@ -12,6 +12,12 @@ html,body{
     padding: 120px 0;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 120px 0;
+  }
+
 .jukebox{
     position:relative;
     top:4em;
@@ -146,4 +152,25 @@ ul{
 
 .text-desc0{
     font-weight: bold;
+}
+
+@media screen and (max-width: 1154px) {
+    .text-desc {
+        display: none;
+    }
+    .jukebox {
+        width: 855px;
+    }
+    .box {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .jukebox {
+        width: 585px;
+    }
+    .box {
+        width: 30px;
+    }
 }
